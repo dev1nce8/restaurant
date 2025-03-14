@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx webpack --watch"
+    "build": "npx webpack",
+    "dev": "npx webpack serve"
   },
   "keywords": [],
   "author": "",

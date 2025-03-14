@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: sytem-ui, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webki-font-smooting: antialiased;
+}
+
+/* prettier-ignore */
+p, h1,h2,h3,h4,h5,h6 {
+	overflow-wrap: break-word
+}
+
+/* prettier-ignore */
+h1,h2,h3,h4,h5,h6 {
+	text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  font: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

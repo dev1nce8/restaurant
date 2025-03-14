@@ -1,0 +1,64 @@
+:root {
+  --clr-primary: #ede8dc;
+  --clr-secodary: #b17f59;
+  --clr-accent: #a5b68d;
+  --clr-accent-2: #c1cfa1;
+
+  --clr-txt-link: #143d60;
+
+  --parent-padding: 2rem;
+}
+
+.logo {
+  color: var(--clr-accent);
+}
+
+body {
+  background-color: var(--clr-primary);
+}
+
+header {
+  background-color: var(--clr-secodary);
+  padding: var(--parent-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & nav ul {
+    display: flex;
+    gap: 1rem;
+
+    & a {
+      color: var(--clr-txt-link);
+    }
+  }
+}
+
+#home {
+  display: grid;
+  gap: 1rem;
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: var(--parent-padding);
+    min-height: 20rem;
+  }
+
+  #gallery {
+    padding: var(--parent-padding);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    & img {
+      height: 100%;
+    }
+
+    & :last-child {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+    }
+  }
+}
