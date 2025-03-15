@@ -9,7 +9,7 @@ const container = document.getElementById("content");
 const navButtons = document.querySelectorAll("#nav-buttons button");
 
 // initial page render
-changePage(container, about);
+changePage(container, home);
 
 navButtons.forEach((button) => {
   button.addEventListener("click", () => {
