@@ -2,15 +2,27 @@ import changePage from "./controller/changePage.js";
 import "./css/reset.css";
 import "./css/style.css";
 import home from "./pages/home.js";
+import menu from "./pages/menu.js";
+import about from "./pages/about.js";
 
 const container = document.getElementById("content");
 const navButtons = document.querySelectorAll("#nav-buttons button");
 
-changePage(container, home);
+// initial page render
+changePage(container, about);
+
 navButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    if (button.dataset.name === "home") {
-      changePage(container, home);
+    switch (button.dataset.name) {
+      case "home":
+        changePage(container, home);
+        break;
+      case "menu":
+        changePage(container, menu);
+        break;
+      case "about":
+        changePage(container, about);
+        break;
     }
   });
 });
